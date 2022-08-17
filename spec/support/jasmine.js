@@ -1,12 +1,12 @@
-constpath=require('path');
+const path = require('path');
  
-constjasmine_module=require('jasmine');
-consttrx_reporter_module=require('jasmine-trx-reporter');
+const jasmine_module = require('jasmine');
+const trx_reporter_module = require('jasmine-trx-reporter');
  
-consttrx_config={ folder: 'test_results'};
-lettrx_reporter_engine=newtrx_reporter_module(trx_config);
+const trx_config = { folder: 'test_results' };
+let trx_reporter_engine = new trx_reporter_module(trx_config);
  
-letjasmine_engine=newjasmine_module();
+let jasmine_engine = new jasmine_module();
 jasmine_engine.loadConfigFile(path.join(__dirname, 'jasmine.json'));
 jasmine_engine.addReporter(trx_reporter_engine);
  
