@@ -31,7 +31,7 @@ jobs:
       
     # install jasmine
     - run: npm ci
-    - run: npm install jasmine-trx-reporter --save-dev
+    - run: npm install jasmine-trx-reporter
     - run: npm run build --if-present
     - run: npm run test
 
