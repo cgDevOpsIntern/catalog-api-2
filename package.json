@@ -13,6 +13,8 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "jasmine": "^4.3.0"
+    "jasmine": "^4.3.0",
+    "protractor": "3.0.0",
+    "jasmine-trx-reporter": "2.0.0"
   }
 }
