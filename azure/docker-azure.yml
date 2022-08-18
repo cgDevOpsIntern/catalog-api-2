@@ -7,8 +7,14 @@ trigger:
 - test
 
 #Azure hosted
-pool:
-  vmImage: ubuntu-latest
+jobs:
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - script: echo hello from Linux
+
+#Azure hosted
 
 #Self hosted  
 #pool:
