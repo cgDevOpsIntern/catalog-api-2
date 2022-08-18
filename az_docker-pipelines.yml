@@ -14,10 +14,10 @@ steps:
   displayName: Login to ACR
   inputs:
     command: login
-    containerRegistry: 'Docker HUB'
+    containerRegistry: 'DockerHUB'
 - task: Docker@2
   inputs:
-    containerRegistry: 'Docker HUB'
+    containerRegistry: 'DockerHUB'
     repository: 'pavcg/catalog-api'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
