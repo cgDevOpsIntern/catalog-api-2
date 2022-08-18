@@ -7,12 +7,12 @@ trigger:
 - test
 
 #Azure hosted
-#pool:
-#  vmImage: ubuntu-latest
+pool:
+  vmImage: ubuntu-latest
 
 #Self hosted  
-pool:
-  CapGemAgentV1 
+#pool:
+#  CapGemAgentV1 
 
 steps:
 - task: Docker@2
