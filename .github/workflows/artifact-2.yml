@@ -37,12 +37,12 @@ jobs:
     - name: Build an Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: my-artifacts"
+        name: my-artifacts
         path: |
           bin/ 
           routes/, 
           node_modules/,
-          [ app.js, package-lock.json, package.json ]
+          [ "app.js", "package-lock.json", "package.json" ]
         #  bin/ 
         #  routes/ 
         #  node_modules/
