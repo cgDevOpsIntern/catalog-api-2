@@ -5,9 +5,7 @@ name: Upload and Build Artifact
 
 on:
   push:
-    branches: [ "test" ]
-  push:
-    branches: [ "main" ]
+    branches: [ "test" ] #, "main" ]
   #pull_request:
   #  branches: [ "main" ]
 
@@ -39,12 +37,13 @@ jobs:
     - name: Build an Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: my-artifacts
-        path: |
-          bin/ 
-          routes/ 
-          node_modules/
-          app.js 
-          package-lock.json 
-          package.json 
+        name: my-artifacts"
+        path: | 
+        [ bin/, routes/, node_modules/, app.js, package-lock.json, package.json ]
+        #  bin/ 
+        #  routes/ 
+        #  node_modules/
+        #  app.js 
+        #  package-lock.json 
+        #  package.json 
         if-no-files-found: ignore
