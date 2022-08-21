@@ -42,7 +42,7 @@ jobs:
           bin/ 
           routes/, 
           node_modules/,
-          [ "app.js", "package-lock.json", "package.json" ]
+          [ app.js, package-lock.json, package.json ]
         #  bin/ 
         #  routes/ 
         #  node_modules/
