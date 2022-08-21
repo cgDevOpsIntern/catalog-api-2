@@ -5,7 +5,7 @@ name: Upload and Build Artifact
 
 on:
   push:
-    branches: [ "test" ] #, "main" ]
+    branches: [ "test" , "main" ]
   #pull_request:
   #  branches: [ "main" ]
 
