@@ -41,10 +41,10 @@ jobs:
       with:
         name: my-artifacts
         path: |
-          -. /bin/ 
-          - ./routes/ 
-          - ./node_modules/
-          - ./app.js 
-          - ./package-lock.json 
-          - ./package.json 
+          bin/ 
+          routes/ 
+          node_modules/
+          app.js 
+          package-lock.json 
+          package.json 
         if-no-files-found: ignore
